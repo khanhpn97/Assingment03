@@ -1,0 +1,127 @@
+@media only screen and (max-width: 500px) {
+  body {
+    /* Điều chỉnh bộ chứa về 500px */
+    width: 500px;
+  }
+  /* Điều chỉnh lại vị trí đoạn text trong ảnh */
+  .text-1 {
+    right: 136px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  /* Điều chỉnh thanh navbar thành hàng dọc */
+  .container-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* ẩn phần boder xung quanh  */
+  .icon-user,
+  .icon-doc-text-inv,
+  .icon-mail-alt,
+  .icon-star-1 {
+    border: none;
+  }
+  /* Xây dựng phần thông tin cá nhân */
+  /* Đổi layout thành 1 cột 2 hàng */
+  .container-infor {
+    grid-template-columns: 1fr;
+  }
+  /* Căn chỉnh lại các thành phần layout trong thông tin cá nhân */
+  #target,
+  #personal-info {
+    padding-left: 10px;
+  }
+  #personal-info ul {
+    padding-left: 2px;
+  }
+
+  /* Xây dựng phần thông tin nghề nghiệp */
+  #job-info {
+    margin-top: 30px;
+  }
+  .form-infor {
+    padding-left: 10px;
+  }
+  /* Đổi layout thành 1 cột 6 hàng */
+  .container-job {
+    grid-template-columns: 1fr;
+  }
+  /* Căn chỉnh lại các thành phần  layout trong thông tin nghề nghiệp */
+  .kinh-nghiệm,
+  .container-hv,
+  .container-hd,
+  .container-nn,
+  .container-st,
+  .container-skill {
+    grid-template-columns: 180px 316px;
+  }
+  .kn-1,
+  .kn-2,
+  .hv-1,
+  .hv-2,
+  .hd-1,
+  .hd-2,
+  .nn-2,
+  .skill-2,
+  .st-2 {
+    justify-self: start;
+  }
+
+  .kn-2,
+  .hv-2,
+  .hd-2,
+  .nn-2,
+  .skill-2,
+  .st-2 {
+    margin-top: 10px;
+  }
+
+   {
+    height: auto;
+  }
+  .st-3 {
+    justify-self: start;
+  }
+  /* Xây dựng phần chứng chỉ giải thưởng */
+  /* Thay đổi layout */
+  .gt {
+    grid-template-columns: 100%;
+  }
+  /* Căn chỉnh lại các phần tử trong layout */
+  .gt-1 > div:nth-child(2),
+  .gt-3 > div:nth-child(2) {
+    padding-left: 7px;
+  }
+  .gt-2 {
+    border-top: 1px solid #d6c08d;
+    padding-top: 30px;
+  }
+  .gt-3 {
+    width: 498px;
+    padding-right: 0px;
+  }
+  .text-gt {
+    padding: 15px px 5px;
+  }
+  /* Xây dựng phần dự án */
+  /* Thay đổi layout */
+  .da {
+    grid-template-columns: 1fr;
+  }
+  /* Căn chỉnh các thành phần trong layout */
+  .text-da {
+    grid-template-columns: 1fr;
+    padding-left: 5px;
+  }
+  .color-2023 {
+    width: 80px;
+    padding: 8px 20px;
+    text-align: start;
+    grid-row: 1;
+    margin-left: 5px;
+  }
+  .text-developer {
+    grid-column: 1;
+  }
+}

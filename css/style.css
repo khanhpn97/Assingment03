@@ -1,0 +1,531 @@
+/* căn chỉnh lề */
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container-main {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+h1 {
+  font-size: 30px;
+  margin-top: -9px;
+}
+/* xong phần căn chỉnh lề */
+
+/* Xây dựng phần banner */
+/* Dùng lệnh position để đưa phần tên vào bên trong ảnh */
+#banner {
+  position: relative;
+  height: 446px;
+  padding: 50px;
+  padding-top: 20px;
+}
+/* Căn chỉnh phần text vào giữa khung ảnh banner */
+.text-1 {
+  color: white;
+  position: absolute;
+  top: 196px;
+  right: 457px;
+  text-align: center;
+  line-height: 35px;
+}
+/* Điều chỉnh kích thước ảnh banner */
+.picture-1 {
+  width: 1100px;
+  height: 427px;
+}
+/* xong phần xây dựng banner */
+
+/* Xây dựng Navbar */
+/* căn chỉnh phần "tên phạm ngọc khánh" vào giữa navbar bằng cách dùng inline-block */
+.name-navbar {
+  display: inline-block;
+  text-align: center;
+}
+/* dùng flex-box để tạo khung và căn chỉnh các phần tử trong navbar */
+.container-navbar {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+/* Xây dựng khung mờ phía ngoài phần thông tin */
+
+.icon-user {
+  border-left: 1px solid rgb(128, 128, 128, 0.3);
+  padding: 20px;
+}
+.icon-doc-text-inv {
+  border-left: 1px solid rgb(128, 128, 128, 0.3);
+  border-right: 1px solid rgb(128, 128, 128, 0.3);
+  padding: 20px;
+}
+.icon-mail-alt {
+  border-left: 1px solid rgb(128, 128, 128, 0.3);
+  padding: 20px;
+}
+.icon-star-1 {
+  border-left: 1px solid rgb(128, 128, 128, 0.3);
+  border-right: 1px solid rgb(128, 128, 128, 0.3);
+  padding: 20px;
+}
+.name-navbar {
+  padding: 0 80px;
+}
+/* Sửa font chữ, màu chữ cho các link trong navbar */
+.thông-tin,
+.lý-lịch,
+.chứng-chỉ,
+.dự-án {
+  font-style: normal;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* phần tên "phạm ngọc khánh" trong navbar */
+.name-navbar span:first-child {
+  font-size: 25px;
+  font-weight: bold;
+}
+/* phần "web developer" trong navbar */
+.name-navbar span:last-child {
+  color: grey;
+}
+/* Xong phần xây dựng navbar */
+
+/* Xây dựng phần thông tin cá nhân */
+/* Dùng grid layout theo yêu cầu của phần hướng dẫn 
+chia "mục tiêu nghề nghiệp" và "thông tin cá nhân" thành 2 cột */
+.container-infor {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* tạo màu nền khác nhau cho 2 mục */
+#target {
+  background: #f7f7f7;
+  padding: 100px;
+}
+#personal-info {
+  background-color: rgb(128, 128, 128, 0.2);
+  padding: 100px;
+}
+/* Điều chỉnh khoảng cách của tiêu đề h1 với đoạn text */
+.section-title {
+  margin-bottom: 20px;
+}
+/* Điều chỉnh khoảng cách giữa các dòng trong mục Mục tiêu nghề nghiệp */
+.text-2 {
+  line-height: 20px;
+}
+/* Điều chỉnh khoảng cách giữa các dòng trong mục thông tin cá nhân */
+.mt-40 {
+  line-height: 20px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+/* Đổi màu phần icon */
+.icon-twitter,
+.icon-facebook,
+.icon-gplus,
+.icon-linkedin {
+  color: blue;
+}
+/* Xong phần xây dựng thông tin cá nhân */
+
+/* Xây dựng phần thông tin nghề nghiệp */
+/* Dùng grid layout tạo 3 cột 2 hàng */
+.container-job {
+  /* căn chỉnh lề */
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  line-height: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* Xây dựng phần kinh nghiệm */
+.kinh-nghiệm,
+.container-hv,
+.container-hd,
+.container-st,
+.container-nn,
+.container-skill {
+  align-self: start;
+}
+/* Dùng grid-layout tạo 2 cột trong phần kinh nghiệm */
+.kinh-nghiệm {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+/* căn chỉnh layout */
+.kn-1 {
+  font-size: 15px;
+  justify-self: start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.kn-2 {
+  font-size: 30px;
+  justify-self: center;
+  margin-top: 15px;
+}
+.kn-3 {
+  grid-column: 1/-1;
+  margin: 30px 30px;
+  justify-self: center;
+}
+/* Tạo màu cho chữ "Hiện tại" */
+.text-ht {
+  color: white;
+  background-color: rgb(0, 0, 255, 0.7);
+  padding: 2px;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+/* Xong phần kinh nghiệm */
+
+/* Xây dựng phần học vấn */
+/* Dùng grid-layout tạo 2 cột trong phần học vấn*/
+.container-hv {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+/* Căn chỉnh layout */
+.hv-1 {
+  justify-self: start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.hv-2 {
+  font-size: 30px;
+  justify-self: center;
+  margin-top: 15px;
+}
+.hv-3 {
+  grid-column: 1/-1;
+  margin: 30px 30px;
+  height: 400px;
+}
+/* Xong phần học vấn */
+
+/* Xây dựng phần hoạt động */
+/* Dùng grid-layout tạo 2 cột trong phần hoạt động*/
+.container-hd {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+/* Căn chỉnh layout */
+.hd-1 {
+  justify-self: start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.hd-2 {
+  font-size: 30px;
+  justify-self: center;
+  margin-top: 15px;
+}
+.hd-3 {
+  grid-column: 1/-1;
+  margin: 30px 30px;
+  height: 400px;
+}
+/* Xong phần hoạt động */
+/* Tạo màu cho chấm tròn đầu dòng */
+.poit {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+.poit li::before {
+  content: "• ";
+  width: 5px;
+  color: blue;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Xây dựng sở thích */
+/* Dùng grid-layout tạo 2 cột trong phần sở thích*/
+.container-st {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+/* căn chỉnh layout */
+.st-1 {
+  justify-self: self-start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.st-2 {
+  font-size: 30px;
+  justify-self: center;
+  margin-top: 15px;
+}
+.st-3 {
+  grid-column: 1/-1;
+  margin: 30px 20px;
+  font-size: 13px;
+  justify-self: center;
+  display: grid;
+  grid-auto-columns: 1fr;
+  gap: 2px;
+}
+/* tạo icon có hình tròn */
+.ic-megaphone,
+.ic-strategy,
+.ic-hotairballoon,
+.ic-basket {
+  border: 1px solid blue;
+  font-size: 20px;
+  color: blue;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* căn chỉnh icon và đoạn chữ ở bên dưới icon */
+.ic-basket {
+  margin-right: 0;
+}
+.text-an {
+  margin-right: 5px;
+}
+.text-cg {
+  margin-right: 8px;
+}
+.text-dl {
+  margin-right: 23px;
+}
+/* Xong phần sở thích */
+
+/* Xây dựng phần ngôn ngữ */
+/* Dùng grid-layout tạo 2 cột trong phần ngôn ngữ*/
+.container-nn {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+/* Căn chỉnh layout */
+.nn-1 {
+  justify-self: self-start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.nn-2 {
+  font-size: 30px;
+  justify-self: center;
+  margin-top: 15px;
+}
+.nn-3 {
+  grid-column: 1/-1;
+  margin: 30px 20px;
+  justify-self: self-start;
+  height: 72px;
+}
+/* Tạo thang điểm */
+.nn-3 span {
+  display: inline-block;
+  padding: 1px 30px;
+  margin-right: 5px;
+  width: 10px;
+  background-color: blue;
+}
+.nn-3 span:last-child {
+  background-color: gray;
+}
+/* Xong phần ngôn ngữ */
+
+/* Xây dựng phần kĩ năng */
+/* Dùng grid-layout tạo 2 cột trong phần kĩ năng*/
+.container-skill {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+/* Căn chỉnh layout */
+.skill-1 {
+  justify-self: self-start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.skill-2 {
+  font-size: 30px;
+  justify-self: center;
+  margin-top: 15px;
+}
+.skill-3 {
+  grid-column: 1/-1;
+  margin: 30px 20px;
+  justify-self: self-start;
+}
+/* Tạo thang điểm */
+.text-skill-1 {
+  display: inline-block;
+  padding: 1px 30px;
+  margin-right: 5px;
+  width: 10px;
+  background-color: blue;
+}
+.text-skill-2 {
+  display: inline-block;
+  padding: 1px 30px;
+  margin-right: 5px;
+  width: 10px;
+  background-color: gray;
+}
+/* Xong phần kĩ năng */
+
+/* Xây dựng Phần chứng chỉ giải thưởng */
+/* căn chỉnh lề */
+#certificate {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #f7f7f7;
+}
+/* Căn chỉnh ảnh */
+.picture-2 {
+  width: 100%;
+}
+/* Dùng grid-layout tạo 2 cột trong phần giải thưởng*/
+.gt {
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-row-gap: 30px;
+  padding-bottom: 50px;
+}
+/* Căn chỉnh layout */
+.gt-1,
+.gt-2,
+.gt-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.gt-2 {
+  border-left: 1px solid #d6c08d;
+  padding-left: 7px;
+}
+.gt-3 {
+  grid-column: 1/-1;
+  width: 474px;
+  border-top: 1px solid #d6c08d;
+  padding-right: 474px;
+  padding-top: 30px;
+  box-sizing: content-box;
+}
+.text-gt {
+  padding-top: 30px;
+  padding-left: 75px;
+  padding-bottom: 30px;
+}
+/* Xong phần chứng chỉ giải thưởng */
+
+/* Xây dựng phần dự án */
+/* Căn chỉnh hình ảnh */
+.picture-3 {
+  width: 100%;
+}
+/* Dùng grid layout tạo 3 cột trong phần dự án */
+.da {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+}
+/* Căn chỉnh layout */
+#project {
+  margin: 20px 0px 10px 125px;
+}
+.da-1,
+.da-2,
+.da-3 {
+  border: 1px solid rgb(128, 128, 128, 0.3);
+}
+/* Tạo màu xanh cho số 2023 */
+.color-2023 {
+  background-color: rgb(0, 0, 255, 0.7);
+  padding: 6px 15px;
+  border-radius: 12px;
+}
+/* Tạo bảng ở mỗi mục */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  border-bottom: 1px solid rgb(128, 128, 128, 0.3);
+  padding: 10px 0px 10px 10px;
+  vertical-align: top;
+}
+/* căn chỉnh chữ trong bảng */
+.cuối-bảng {
+  border: none;
+}
+.text-da {
+  border-bottom: 1px solid rgb(128, 128, 128, 0.3);
+  padding: 10px 0px 10px 20px;
+}
+/* Xong phần dự án */
+
+/* Xây dựng phần footer */
+footer {
+  display: block;
+  background-color: rgb(128, 128, 128, 0.2);
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+/* Xong phần footer */
+
+/* Làm phần nâng cao bổ sung thanh cá nhân */
+.nâng-cao-1 {
+  position: relative;
+}
+.nâng-cao-2 {
+  width: 10%;
+  position: absolute;
+  top: -30px;
+  left: 540px;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius: 50%;
+}
+/* Xong phần nâng cao */

@@ -1,0 +1,51 @@
+.hide {
+  display: none;
+}
+/* tạo kiểu cho phần chức năng ẩn thông tin cá nhân */
+.form-infor {
+  background-color: rgb(128, 128, 128, 0.2);
+  padding: 100px;
+}
+.form-text {
+  color: rgb(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+#submit {
+  color: white;
+  background-color: blue;
+  border: none;
+  padding: 5px 6px;
+  border-radius: 5px;
+}
+#Email {
+  width: 100%;
+  height: 25px;
+}
+/* tạo kiểu cho phần chức năng ẩn thông tin nghề nghiệp */
+/* tạo kiểu cho nút view more */
+.btnView-more {
+  background-color: orange;
+  border: none;
+  padding: 5px 17px;
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* tạo hiệu ứng ẩn hiện nút view-more */
+.btnView-more {
+  display: none;
+}
+
+.kinh-nghiệm:hover .btnView-more,
+.container-hv:hover .btnView-more,
+.container-hd:hover .btnView-more,
+.container-st:hover .btnView-more,
+.container-nn:hover .btnView-more,
+.container-skill:hover .btnView-more {
+  display: block;
+}

@@ -1,0 +1,120 @@
+@media only screen and (max-width: 768px) {
+  body {
+    /* Điều chỉnh chiều dài bộ chứa về 768px */
+    width: 768px;
+  }
+  .container-main {
+    max-width: 100%;
+  }
+  /* Điều chỉnh chiều dài các phần tử trong bộ chứa*/
+  .picture-1,
+  header,
+  .container-infor,
+  .container-job,
+  .gt,
+  #certificate {
+    width: 100%;
+  }
+  /* Điều chỉnh lại vị trí đoạn text ở trong ảnh banner  */
+  .text-1 {
+    right: 245px;
+  }
+  /*Ẩn phần avatar  */
+  .nâng-cao-2 {
+    display: none;
+  }
+  .name-navbar {
+    padding: 0 40px;
+  }
+  /* Căn chỉnh phần thông tin cá nhân */
+  .container-infor {
+    justify-content: center;
+    align-content: center;
+  }
+  #target {
+    padding: 40px;
+  }
+  .form-infor {
+    padding: 40px;
+  }
+  #personal-info {
+    padding: 33px;
+  }
+
+  /* Xây dựng phần thông tin nghề nghiệp */
+  /* Đổi layout thành 2 cột 2 hàng */
+  .container-job {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Căn chỉnh lại các thành phần  layout trong thông tin nghề nghiệp */
+  .st-3,
+  .hd-3 {
+    height: 200px;
+  }
+  .hv-3 {
+    height: 340px;
+  }
+
+  .ic-basket {
+    margin-right: 56px;
+  }
+  .poit {
+    padding: 0px;
+  }
+
+  /* Xây dựng phần chứng chỉ giải thưởng */
+  /* Thay đổi layout */
+  .gt-1 > div:nth-child(2),
+  .gt-3 > div:nth-child(2) {
+    padding-left: 7px;
+  }
+  .gt {
+    grid-template-columns: 50% 50%;
+  }
+  .gt-1,
+  .gt-2,
+  .gt-3 {
+    grid-template-columns: 1fr;
+    /* Căn chỉnh các phần tử trong layout */
+  }
+  .gt-3 {
+    width: 383px;
+    padding-right: 383px;
+  }
+  .text-gt {
+    padding: 4px;
+  }
+  /* Xây dựng phần dự án */
+  .da {
+    width: 100%;
+  }
+  /* Căn chỉnh các phần tử trong dự án */
+  #project {
+    margin-left: 0px;
+  }
+  .text-da {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+  }
+  .text-tw {
+    display: block;
+  }
+  .text-developer {
+    grid-column: 2;
+  }
+  .color-2023 {
+    grid-row: 1/3;
+    text-align: center;
+    padding: 8px 0;
+    width: 85px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 4px;
+  }
+}
+
+/* Xây dựng phần footer */
+footer {
+  width: 100%;
+}

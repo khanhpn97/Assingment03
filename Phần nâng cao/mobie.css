@@ -1,0 +1,12 @@
+@media only screen and (max-width: 500px) {
+  body {
+    /* Điều chỉnh độ dài của bộ chứa */
+    width: 500px;
+  }
+  .main {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    grid-template-columns: 100%;
+  }
+}
